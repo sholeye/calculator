@@ -1,0 +1,99 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  height: 60vh;
+  width: 40vw;
+  box-shadow: 0 0 20px rgba(158, 158, 158, 0.2);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.screen {
+  flex-basis: 20%;
+  border-radius: 1rem;
+  box-shadow: inset 1px 1px 10px rgba(158, 158, 158, 0.3);
+  border: none;
+  font-size: 2rem;
+  padding: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.screen:active {
+  background-color: red;
+}
+
+.keypads {
+  flex-basis: 77%;
+
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.keypad-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.key {
+  font-size: 2rem;
+  height: 5rem;
+  width: 7rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(158, 158, 158, 0.2);
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.1s linear;
+}
+
+.key:hover {
+  border: solid 1px black;
+}
+
+.key:focus {
+  scale: 1.1;
+  background-color: yellow;
+}
+
+.btn-clear {
+  flex-basis: 50%;
+  color: white;
+  background-color: red;
+}
+
+.btn-plus {
+  background-color: rgb(7, 113, 7);
+  color: white;
+}
+
+.btn-equals {
+  background-color: rgb(74, 74, 245);
+  color: white;
+}
+
+.keypad-row-fourth .key {
+  flex-grow: 1;
+}
